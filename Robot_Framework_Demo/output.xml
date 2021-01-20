@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.2 (Python 3.8.5 on win32)" generated="20210120 09:51:22.739" rpa="false">
+<suite id="s1" name="Tags Demo" source="D:\Ecolab Digital Center\Selenium\Robot Framework\Robot_Framework_Demo\TestCases\Tags_Demo.robot">
+<test id="s1-t1" name="Adding Two numbers">
+<kw name="Add two num">
+<arguments>
+<arg>${a}</arg>
+<arg>${b}</arg>
+</arguments>
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<arguments>
+<arg>${num1}+${num2}</arg>
+</arguments>
+<assign>
+<var>${result}</var>
+</assign>
+<msg timestamp="20210120 09:51:22.794" level="INFO">${result} = 15</msg>
+<status status="PASS" starttime="20210120 09:51:22.794" endtime="20210120 09:51:22.794"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${result}</arg>
+</arguments>
+<msg timestamp="20210120 09:51:22.795" level="INFO">15</msg>
+<status status="PASS" starttime="20210120 09:51:22.794" endtime="20210120 09:51:22.795"></status>
+</kw>
+<status status="PASS" starttime="20210120 09:51:22.793" endtime="20210120 09:51:22.795"></status>
+</kw>
+<doc>Addition</doc>
+<tags>
+<tag>Add</tag>
+<tag>Sub</tag>
+</tags>
+<status status="PASS" starttime="20210120 09:51:22.791" endtime="20210120 09:51:22.796" critical="yes"></status>
+</test>
+<test id="s1-t2" name="Subtracting Two numbers">
+<kw name="Sub two num">
+<arguments>
+<arg>${a}</arg>
+<arg>${b}</arg>
+</arguments>
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<arguments>
+<arg>${num1} - ${num2}</arg>
+</arguments>
+<assign>
+<var>${result}</var>
+</assign>
+<msg timestamp="20210120 09:51:22.800" level="INFO">${result} = 5</msg>
+<status status="PASS" starttime="20210120 09:51:22.799" endtime="20210120 09:51:22.800"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${result}</arg>
+</arguments>
+<msg timestamp="20210120 09:51:22.801" level="INFO">5</msg>
+<status status="PASS" starttime="20210120 09:51:22.800" endtime="20210120 09:51:22.801"></status>
+</kw>
+<status status="PASS" starttime="20210120 09:51:22.799" endtime="20210120 09:51:22.801"></status>
+</kw>
+<doc>Subtraction</doc>
+<tags>
+<tag>Sub</tag>
+</tags>
+<status status="PASS" starttime="20210120 09:51:22.798" endtime="20210120 09:51:22.802" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20210120 09:51:22.743" endtime="20210120 09:51:22.804"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0">Critical Tests</stat>
+<stat pass="2" fail="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0">Add</stat>
+<stat pass="2" fail="0">Sub</stat>
+</tag>
+<suite>
+<stat pass="2" fail="0" id="s1" name="Tags Demo">Tags Demo</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
